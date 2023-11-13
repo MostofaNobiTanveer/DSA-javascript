@@ -14,17 +14,15 @@
 // 02
 // function reverse(str) {
 //   let reversed = "";
-
-//   for (const char of str) {
+//   for (let char of str) {
 //     reversed = char + reversed;
 //   }
-
 //   return reversed;
 // }
 
 // 03
 function reverse(str) {
-  return str.split("").reduce((acc, curr) => curr + acc, "");
+  return str.split("").reduce((rev, char) => char + rev, "");
 }
 
 module.exports = reverse;

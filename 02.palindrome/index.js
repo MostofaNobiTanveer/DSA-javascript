@@ -14,7 +14,7 @@
 
 // 02
 function palindrome(str) {
-  return str.split("").every((char, i) => str[str.length - i - 1] === char);
+  return str.split("").every((char, i) => char === str[str.length - i - 1])
 }
 
 module.exports = palindrome;
